@@ -1,0 +1,11 @@
+[Unit]
+Description=MiApache on port 10080 Service
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/miapache/bin/apachectl start
+
+[Install]
+WantedBy=multi-user.target
+Alias=miapache.service

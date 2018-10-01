@@ -1,0 +1,17 @@
+$TTL	86400 ; 24 hours could have been written as 24h or 1d
+$ORIGIN deadspace.fei.
+@  1D  IN	 SOA dns.deadspace.fei.	oscar.deadspace.fei. (
+			      2018092401 ; serial
+			      3H ; refresh
+			      15 ; retry
+			      1w ; expire
+			      3h ; minimum
+			     )
+       IN  NS     dns.deadspace.fei. ; Nombre del servidor de nombres
+       IN  MX  10 correo.deadspace.fei. ; Servidor de correo
+; server host definitions
+dns    IN  A      192.168.11.50  ;name server definition     
+correo    IN  A      192.168.11.50  ;web server definition
+; non server domain hosts
+www   IN  A      192.168.11.50
+motog   IN  A	192.168.11.41

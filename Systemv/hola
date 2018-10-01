@@ -1,0 +1,31 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          hola
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6s
+# Short-Description: Example initscript
+# Description:       This file should be used to construct scripts to be
+#                    placed in /etc/init.d.
+### END INIT INFO
+
+# Author: oscar <oscarchaconvazquez@gmail.com>
+#
+
+DESC="Este servicio no hace nada mas que dar los buenos dias"
+
+case "$1" in 
+    start)
+        echo "Iniciando servicio hola"
+        echo "Hola que tengas un excelente dia"
+        ;;
+    stop)
+        echo "Deteniendo servicio hola"
+        echo "Gracias por utilizar el demonio hola"
+        ;;
+    *)
+        echo "Error la sintasis es hola start | stop"
+        ;;
+esac
+exit 0

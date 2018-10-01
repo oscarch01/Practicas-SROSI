@@ -1,0 +1,36 @@
+
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ACCESO DENEGADO</title>
+<style type="text/css"><!--
+ %l
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id="%c">
+<div id="titles">
+<h1>PROHIBIDO</h1>
+<h2>La dirección solicitada no se ha podido acceder</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>El sitio al que intenta acceder: <a href="%U">%U</a> por su seguridad esta:</p>
+
+<blockquote id="error">
+<p><b>Acceso Denegado</b></p>
+</blockquote>
+
+<p>La configuración de control de acceso evita que su solicitud sea permitida en este momento. Por favor, póngase en contacto con su proveedor de servicios si cree que esto es incorrecto.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>DeadSpace Su humilde administrador</p>
+<!-- %c -->
+</div>
+</body></html>
